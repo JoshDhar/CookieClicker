@@ -46,14 +46,14 @@
             this.cursorCntTxt = new System.Windows.Forms.Label();
             this.ImprovementsLbl = new System.Windows.Forms.Label();
             this.bottomPanel = new System.Windows.Forms.Panel();
+            this.factoryBtn = new System.Windows.Forms.Button();
+            this.MineBtn = new System.Windows.Forms.Button();
+            this.farmBtn = new System.Windows.Forms.Button();
+            this.grannyBtn = new System.Windows.Forms.Button();
+            this.cursorsBtn = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.cookieBtn = new System.Windows.Forms.Button();
             this.CookiePanel = new System.Windows.Forms.Panel();
-            this.cursorsBtn = new System.Windows.Forms.Button();
-            this.grannyBtn = new System.Windows.Forms.Button();
-            this.farmBtn = new System.Windows.Forms.Button();
-            this.MineBtn = new System.Windows.Forms.Button();
-            this.factoryBtn = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.infoPanel.SuspendLayout();
             this.buyPanel.SuspendLayout();
@@ -235,6 +235,66 @@
             this.bottomPanel.Size = new System.Drawing.Size(400, 200);
             this.bottomPanel.TabIndex = 2;
             // 
+            // factoryBtn
+            // 
+            this.factoryBtn.Location = new System.Drawing.Point(167, 126);
+            this.factoryBtn.Name = "factoryBtn";
+            this.factoryBtn.Size = new System.Drawing.Size(75, 23);
+            this.factoryBtn.TabIndex = 0;
+            this.factoryBtn.Text = "Factory";
+            this.factoryBtn.UseVisualStyleBackColor = true;
+            this.factoryBtn.Click += new System.EventHandler(this.factoryBtn_Click);
+            // 
+            // MineBtn
+            // 
+            this.MineBtn.Location = new System.Drawing.Point(76, 126);
+            this.MineBtn.Name = "MineBtn";
+            this.MineBtn.Size = new System.Drawing.Size(75, 23);
+            this.MineBtn.TabIndex = 0;
+            this.MineBtn.Text = "Mine";
+            this.MineBtn.UseVisualStyleBackColor = true;
+            this.MineBtn.Click += new System.EventHandler(this.MineBtn_Click);
+            // 
+            // farmBtn
+            // 
+            this.farmBtn.Location = new System.Drawing.Point(260, 79);
+            this.farmBtn.Name = "farmBtn";
+            this.farmBtn.Size = new System.Drawing.Size(75, 23);
+            this.farmBtn.TabIndex = 0;
+            this.farmBtn.Text = "Farm";
+            this.farmBtn.UseVisualStyleBackColor = true;
+            this.farmBtn.Click += new System.EventHandler(this.farmBtn_Click);
+            // 
+            // grannyBtn
+            // 
+            this.grannyBtn.Location = new System.Drawing.Point(167, 79);
+            this.grannyBtn.Name = "grannyBtn";
+            this.grannyBtn.Size = new System.Drawing.Size(75, 23);
+            this.grannyBtn.TabIndex = 0;
+            this.grannyBtn.Text = "Granny";
+            this.grannyBtn.UseVisualStyleBackColor = true;
+            this.grannyBtn.Click += new System.EventHandler(this.grannyBtn_Click);
+            // 
+            // cursorsBtn
+            // 
+            this.cursorsBtn.Location = new System.Drawing.Point(76, 79);
+            this.cursorsBtn.Name = "cursorsBtn";
+            this.cursorsBtn.Size = new System.Drawing.Size(75, 23);
+            this.cursorsBtn.TabIndex = 0;
+            this.cursorsBtn.Text = "Cursors";
+            this.cursorsBtn.UseVisualStyleBackColor = true;
+            this.cursorsBtn.Click += new System.EventHandler(this.cursorsBtn_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(167, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 30);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Buy";
+            // 
             // cookieBtn
             // 
             this.cookieBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -260,65 +320,11 @@
             this.CookiePanel.Size = new System.Drawing.Size(400, 250);
             this.CookiePanel.TabIndex = 3;
             // 
-            // cursorsBtn
+            // timer1
             // 
-            this.cursorsBtn.Location = new System.Drawing.Point(76, 79);
-            this.cursorsBtn.Name = "cursorsBtn";
-            this.cursorsBtn.Size = new System.Drawing.Size(75, 23);
-            this.cursorsBtn.TabIndex = 0;
-            this.cursorsBtn.Text = "Cursors";
-            this.cursorsBtn.UseVisualStyleBackColor = true;
-            this.cursorsBtn.Click += new System.EventHandler(this.cursorsBtn_Click);
-            // 
-            // grannyBtn
-            // 
-            this.grannyBtn.Location = new System.Drawing.Point(167, 79);
-            this.grannyBtn.Name = "grannyBtn";
-            this.grannyBtn.Size = new System.Drawing.Size(75, 23);
-            this.grannyBtn.TabIndex = 0;
-            this.grannyBtn.Text = "Granny";
-            this.grannyBtn.UseVisualStyleBackColor = true;
-            this.grannyBtn.Click += new System.EventHandler(this.grannyBtn_Click);
-            // 
-            // farmBtn
-            // 
-            this.farmBtn.Location = new System.Drawing.Point(260, 79);
-            this.farmBtn.Name = "farmBtn";
-            this.farmBtn.Size = new System.Drawing.Size(75, 23);
-            this.farmBtn.TabIndex = 0;
-            this.farmBtn.Text = "Farm";
-            this.farmBtn.UseVisualStyleBackColor = true;
-            this.farmBtn.Click += new System.EventHandler(this.farmBtn_Click);
-            // 
-            // MineBtn
-            // 
-            this.MineBtn.Location = new System.Drawing.Point(76, 126);
-            this.MineBtn.Name = "MineBtn";
-            this.MineBtn.Size = new System.Drawing.Size(75, 23);
-            this.MineBtn.TabIndex = 0;
-            this.MineBtn.Text = "Mine";
-            this.MineBtn.UseVisualStyleBackColor = true;
-            this.MineBtn.Click += new System.EventHandler(this.MineBtn_Click);
-            // 
-            // factoryBtn
-            // 
-            this.factoryBtn.Location = new System.Drawing.Point(167, 126);
-            this.factoryBtn.Name = "factoryBtn";
-            this.factoryBtn.Size = new System.Drawing.Size(75, 23);
-            this.factoryBtn.TabIndex = 0;
-            this.factoryBtn.Text = "Factory";
-            this.factoryBtn.UseVisualStyleBackColor = true;
-            this.factoryBtn.Click += new System.EventHandler(this.factoryBtn_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(167, 18);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 30);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Buy";
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -329,7 +335,10 @@
             this.Controls.Add(this.bottomPanel);
             this.Controls.Add(this.buyPanel);
             this.Controls.Add(this.infoPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CookieClicker";
             this.infoPanel.ResumeLayout(false);
             this.infoPanel.PerformLayout();

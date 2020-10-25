@@ -12,7 +12,7 @@ namespace CookieClicker
 {
     public partial class Form1 : Form
     {
-        int cookies = 0;
+        double cookies = 0;
         int cursors = 0;
         int grannies = 0;
         int farms = 0;
@@ -20,19 +20,28 @@ namespace CookieClicker
         int factories = 0;
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            //Timer MyTimer = new Timer();
+            //MyTimer.Interval = (1000); // 45 mins
+            //MyTimer.Tick += new EventHandler(timer1_Tick);
+            //MyTimer.Start();
             checkCookies();
         }
 
         private void cookieBtn_Click(object sender, EventArgs e)
         {
             cookies++;
-            cookieCntLbl.Text = cookies.ToString();
             checkCookies();
         }
 
         private void checkCookies()
         {
+            cookieCntLbl.Text = cookies.ToString("F1"); 
+            cursorCntLbl.Text = cursors.ToString();
+            grannyCntLbl.Text = grannies.ToString();
+            FarmCntLbl.Text = farms.ToString();
+            MineCntLbl.Text = mines.ToString();
+            FactoryCntLbl.Text = factories.ToString();
             cursorsBtn.Enabled = (cookies >= 15) ? true : false;
             grannyBtn.Enabled = (cookies >= 100) ? true : false;
             farmBtn.Enabled = (cookies >= 1100) ? true : false;
@@ -78,6 +87,25 @@ namespace CookieClicker
             cookies = cookies - 130000;
             FactoryCntLbl.Text = factories.ToString();
             checkCookies();
+        }
+
+        private void calculateCookies()
+        {
+            double cursorsPerSecond = cursors * 0.1;
+            double granniesPerSecond = grannies * 1;
+            double farmsPerSecond = farms * 8;
+            double minesperSecond = mines * 47;
+            double factoriesPerSecond = factories * 260;
+
+            double cookiesPerSecond = cursorsPerSecond + granniesPerSecond + farmsPerSecond + minesperSecond + factoriesPerSecond;
+
+            cookies = cookies + cookiesPerSecond;
+            checkCookies();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            calculateCookies();
         }
     }
 }
