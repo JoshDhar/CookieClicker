@@ -52,7 +52,7 @@ namespace CookieClicker
         {
             grannies++;
             cookies = cookies - 100;
-            grannyCntLbl.Text = cursors.ToString();
+            grannyCntLbl.Text = grannies.ToString();
             checkCookies();
         }
 
@@ -60,7 +60,7 @@ namespace CookieClicker
         {
             farms++;
             cookies = cookies - 1100;
-            FarmCntLbl.Text = cursors.ToString();
+            FarmCntLbl.Text = farms.ToString();
             checkCookies();
         }
 
@@ -68,7 +68,7 @@ namespace CookieClicker
         {
             mines++;
             cookies = cookies - 12000;
-            MineCntLbl.Text = cursors.ToString();
+            MineCntLbl.Text = mines.ToString();
             checkCookies();
         }
 
@@ -76,7 +76,7 @@ namespace CookieClicker
         {
             factories++;
             cookies = cookies - 130000;
-            FactoryCntLbl.Text = cursors.ToString();
+            FactoryCntLbl.Text = factories.ToString();
             checkCookies();
         }
     }
